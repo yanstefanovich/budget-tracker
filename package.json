@@ -1,0 +1,15 @@
+{
+  "name": "budget-tracker-app",
+  "version": "2.0.0",
+  "description": "Track monthly expenditures and incomes for monthly budget,
+                  Version 2 of the Budget tracker app",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yanstefanovich/budget-tracker.git"
+  },
+  "author": "Yan Stefanovich",
+  "license": "ISC"
+}
