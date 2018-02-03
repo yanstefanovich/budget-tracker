@@ -5,7 +5,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .clearfix::after {
@@ -24,7 +25,9 @@ body {
 }
 
 .right { float: right; }
+
 .red { color: #FF5049 !important; }
+
 .red-focus:focus { border: 1px solid #FF5049 !important; }
 
 /**********************************************
@@ -33,6 +36,7 @@ body {
 
 .top {
     height: 45vh;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.7))), url(../../img/back.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7)), url(../../img/back.jpg);
     background-size: cover;
     background-position: center;
@@ -44,7 +48,8 @@ body {
     width: 750px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     color: #fff;
 }
 
@@ -111,12 +116,12 @@ body {
     border-radius: 3px;
 }
 
-
 /**********************************************
 *** BOTTOM PART
 **********************************************/
 
 /***** FORM *****/
+
 .add {
     padding: 14px;
     border-bottom: 1px solid #e7e7e7;
@@ -137,6 +142,7 @@ body {
     background-color: #fff;
     margin-right: 10px;
     font-weight: 300;
+    -webkit-transition: border 0.3s;
     transition: border 0.3s;
 }
 
@@ -150,10 +156,12 @@ body {
     padding: 12px 15px;
     margin-right: 10px;
     border-radius: 5px;
+    -webkit-transition: border 0.3s;
     transition: border 0.3s;
 }
 
 .add__description { width: 400px;}
+
 .add__value { width: 100px;}
 
 .add__btn {
@@ -168,7 +176,7 @@ body {
     margin-left: 10px;
 }
 
-.add__btn:active { transform: translateY(2px); }
+.add__btn:active { -webkit-transform: translateY(2px); transform: translateY(2px); }
 
 .add__type:focus,
 .add__description:focus,
@@ -180,6 +188,7 @@ body {
 .add__btn:focus { outline: none; }
 
 /***** LISTS *****/
+
 .container {
     width: 1000px;
     margin: 60px auto;
@@ -204,6 +213,7 @@ h2 {
 }
 
 .icome__title { color: #1FC134; }
+
 .expenses__title { color: #FF5049; }
 
 .item {
@@ -212,6 +222,7 @@ h2 {
 }
 
 .item:first-child { border-top: 1px solid #e7e7e7; }
+
 .item:nth-child(even) { background-color: #f7f7f7; }
 
 .item__description {
@@ -220,13 +231,19 @@ h2 {
 
 .item__value {
     float: left;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .item__percentage {
     float: left;
     margin-left: 20px;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
     font-size: 11px;
     background-color: #FFDAD9;
     padding: 3px;
@@ -246,7 +263,6 @@ h2 {
     color: #FF5049;
 }
 
-
 .item__delete {
     float: left;
 }
@@ -263,12 +279,14 @@ h2 {
 }
 
 .item__delete--btn:focus { outline: none; }
-.item__delete--btn:active { transform: translateY(2px); }
+
+.item__delete--btn:active { -webkit-transform: translateY(2px); transform: translateY(2px); }
 
 .item:hover .item__delete--btn { display: block; }
-.item:hover .item__value { transform: translateX(-20px); }
-.item:hover .item__percentage { transform: translateX(-20px); }
 
+.item:hover .item__value { -webkit-transform: translateX(-20px); transform: translateX(-20px); }
+
+.item:hover .item__percentage { -webkit-transform: translateX(-20px); transform: translateX(-20px); }
 
 .unpaid {
     background-color: #FFDAD9 !important;
@@ -277,5 +295,6 @@ h2 {
 
 }
 
-.unpaid .item__percentage { box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1); }
+.unpaid .item__percentage { -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1); box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1); }
+
 .unpaid:hover .item__description { font-weight: 900; }

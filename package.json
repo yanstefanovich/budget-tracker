@@ -1,8 +1,7 @@
 {
   "name": "budget-tracker-app",
   "version": "2.0.0",
-  "description": "Track monthly expenditures and incomes for monthly budget,
-                  Version 2 of the Budget tracker app",
+  "description": "Track monthly expenditures and incomes for monthly budget, Version 2 of the Budget tracker app",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +10,14 @@
     "url": "https://github.com/yanstefanovich/budget-tracker.git"
   },
   "author": "Yan Stefanovich",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.1",
+    "postcss-import": "^11.0.0",
+    "postcss-mixins": "^6.2.0",
+    "precss": "^3.1.0"
+  }
 }
